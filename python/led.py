@@ -102,10 +102,10 @@ def _update_pi():
     # Update the pixels
     for i in range(config.N_PIXELS):
         # Ignore pixels if they haven't changed (saves bandwidth)
-        if np.array_equal(p[:, i], _prev_pixels[:, i]):
-            continue
+    #    if np.array_equal(p[:, i], _prev_pixels[:, i]):
+     #       continue
         strip._led_data[i] = rgb[i]
-    _prev_pixels = np.copy(p)
+    #_prev_pixels = np.copy(p)
     strip.show()
 
 def _update_blinkstick():
