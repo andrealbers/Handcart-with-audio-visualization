@@ -1,5 +1,5 @@
 # Audio Reactive LED Strip
-Real-time LED strip music visualization using a Raspberry Pi 3 B+.
+Real-time LED strip music visualization using a Raspberry Pi 3 B+ used for a Handcart.
 Watch Video1/2 for example.
 
 ### Raspberry Pi
@@ -19,7 +19,6 @@ sudo apt-get install python-numpy python-scipy python-pyaudio qt5-default pyqt-d
 ```
 
 ## Install ws281x library
-To install the ws281x library I recommend following this [Adafruit tutorial](https://learn.adafruit.com/neopixels-on-raspberry-pi/software).
 ```
 sudo apt-get install build-essential python-dev git scons swig
 git clone https://github.com/jgarff/rpi_ws281x.git
@@ -66,7 +65,7 @@ defaults.pcm.card 1
 ## Test the LED strip
 1. cd rpi_ws281x/python/examples
 2. sudo nano strandtest.py
-3. Configure the options at the top of the file. Enable logic inverting if you are using an inverting logic-level converter. Set the correct GPIO pin and number of pixels for the LED strip. You will likely need a logic-level converter to convert the Raspberry Pi's 3.3V logic to the 5V logic used by the ws2812b LED strip.
+3. Configure the options at the top of the file. Enable logic inverting if you are using an inverting logic-level converter. Set the correct GPIO pin and number of pixels for the LED strip. 
 4. Run example with 'sudo python strandtest.py'
 
 ## Configure the visualization code
@@ -77,11 +76,9 @@ If you are using an inverting logic level converter, set `LED_INVERT = True` in 
 * Audio cable connected to the audio input jack (requires USB sound card on Raspberry Pi)
 
 # Running the Visualization
-Once everything has been configured, run [visualization.py](python/visualization.py) to start the visualization. The visualization will automatically use your default recording device (microphone) as the audio input.
+Once everything has been configured, run visualization.py to start the visualization. The visualization will automatically use your default recording device (microphone) as the audio input.
 
-A PyQtGraph GUI will open to display the output of the visualization on the computer. There is a setting to enable/disable the GUI display in [config.py](python/config.py)
-
-![visualization-gui](images/visualization-gui.png)
+A PyQtGraph GUI will open to display the output of the visualization on the computer. There is a setting to enable/disable the GUI display in config.py.
 
 # License
 This project was developed by Scott Lawson and is released under the MIT License.
