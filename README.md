@@ -78,7 +78,7 @@ If you are using an inverting logic level converter, set `LED_INVERT = True` in 
 # Running the Visualization
 Once everything has been configured, run visualization.py to start the visualization. The visualization will automatically use your default recording device (microphone) as the audio input.
 
-A PyQtGraph GUI will open to display the output of the visualization on the computer. There is a setting to enable/disable the GUI display in config.py.
+There is a setting to enable/disable the GUI display in config.py.
 
 # License
 This project was developed by Scott Lawson and is released under the MIT License.
