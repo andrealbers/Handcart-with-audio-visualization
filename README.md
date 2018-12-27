@@ -1,5 +1,6 @@
 # Audio Reactive LED Strip
 Real-time LED strip music visualization using a Raspberry Pi 3 B+.
+Watch Video1/2 for example.
 
 ### Raspberry Pi
 You cannot power the LED strip using the Raspberry Pi GPIO pins, you need to have an external 5V power supply.
@@ -14,7 +15,7 @@ The connections are:
 Install python dependencies using apt-get
 ```
 sudo apt-get update
-sudo apt-get install python-numpy python-scipy python-pyaudio
+sudo apt-get install python-numpy python-scipy python-pyaudio qt5-default pyqt-dev pyqt5-dev-tools
 ```
 
 ## Install ws281x library
